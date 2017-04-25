@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <ul class="hand_toggle">
+            <li class="hand_list">
+                <a href="#" class="hand_title handTitle" data-rel="handContent1">手风琴效果</a>
+                <div id="handContent1" class="hand_content">典型的手风琴效果</div>
+            </li>
+            <li class="hand_list">
+                <a href="#" class="hand_title handTitle" data-rel="handContent2">有一些变体</a>
+                <div id="handContent2" class="hand_content" style="display: none">手风琴效果。。。</div>
+            </li>
+            <li class="hand_list">
+                <a href="#" class="hand_title handTitle" data-rel="handContent3">甚至这个</a>
+                <div id="handContent3" class="hand_content" style="display: none">dsdsdsdsdsdsd</div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script src="jquery.min.js?v=1.4.4"></script>
+<script src="jquery-powerSwitch.js"></script>
+<script type="text/javascript">
+    $(".handTitle").powerSwitch({
+        animation: "slide"
+    });
+</script>
+</html>
